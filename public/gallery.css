@@ -1,0 +1,83 @@
+* { box-sizing: border-box; }
+body { background: #E8E7E4; margin: 0; padding: 3em 1em;}
+ul { list-style: none; margin: 0; padding: 0;}
+figure { margin: 0; }
+figcaption { 
+  font-style: normal; /* Override the default italic style */
+  font-size: 0.8em; 
+  color: grey; 
+  line-height: 1.4; 
+}
+
+.grid {
+  display: grid;
+  grid-auto-flow: column; 
+  grid-auto-columns: 90%; 
+  grid-gap: 1em;
+  overflow-x: scroll; 
+  -webkit-overflow-scrolling: touch; 
+  padding: 2em 1em;
+  background: white;
+  
+  @media all and (min-width: 600px) {
+    grid-auto-flow: initial;  
+    grid-template-columns: repeat(auto-fit, minmax(auto,20em));
+    justify-content: center; 
+  }
+  
+  &__figure {
+    display: grid;
+    grid-template-rows: 15em 1fr;
+    grid-gap: 1em;
+    position: relative; /* Needed to position the sale badge */
+    background-color: white; /* Ensure each item has a white background */
+    padding: 1em;
+    border-radius: 5px; /* Optional: adds a slight curve to the corners */
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+/* New styles for the cosmetic product gallery */
+
+/* Style for the product name */
+.product-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+}
+
+/* Style for the old price (strikethrough) */
+.price-old {
+  text-decoration: line-through;
+  color: #777;
+  font-size: 0.9em;
+  display: inline;
+  margin-right: 5px;
+}
+
+/* Style for the new price */
+.price-new {
+  color: #000;
+  font-size: 0.9em;
+  display: inline;
+}
+
+/* Style for the sale badge */
+.sale-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #556B2F;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}

@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Link } from 'react-router-dom';
 import paverTypesImage from '@/assets/paver-types.png';
 
 const Products = () => {
@@ -71,7 +72,12 @@ const Products = () => {
             <Card key={index} className="border-border hover:shadow-glow transition-all duration-300 group">
               <CardHeader>
                 <CardTitle className="text-xl text-primary group-hover:text-accent transition-colors duration-300">
-                  {product.name}
+                  <Link 
+                    to={`/product/${product.name.toLowerCase().replace(/\s+/g, '-')}`}
+                    className="hover:underline cursor-pointer"
+                  >
+                    {product.name}
+                  </Link>
                 </CardTitle>
                 <CardDescription className="text-muted-foreground">
                   {product.description}
@@ -109,12 +115,6 @@ const Products = () => {
                 <Button 
                   variant="outline" 
                   className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300"
-                  onClick={() => {
-                    const contactSection = document.getElementById('contact');
-                    if (contactSection) {
-                      contactSection.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }}
                 >
                   Request Quote
                 </Button>

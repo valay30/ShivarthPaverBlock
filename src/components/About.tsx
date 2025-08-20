@@ -88,7 +88,10 @@ const About = () => {
               </div>
             </div>
 
-            <Button className="bg-gradient-primary hover:opacity-90 transition-opacity duration-300">
+            <Button
+              className="bg-gradient-primary hover:opacity-90 transition-opacity duration-300"
+              onClick={() => window.open("https://www.instagram.com/shivarthpaverblock/", "_blank")}
+              >
               Learn More About Us
             </Button>
           </div>

@@ -55,7 +55,7 @@ const Footer = () => {
               {/* <a href="#" className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-primary-foreground/20 transition-colors duration-300">
                 <Twitter className="h-5 w-5" />
               </a> */}
-              <a href="https://www.instagram.com/shivarthpaverblock/" className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-primary-foreground/20 transition-colors duration-300">
+              <a href="https://www.instagram.com/shivarthpaverblock/" target="_blank" className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-primary-foreground/20 transition-colors duration-300">
                 <Instagram className="h-5 w-5" />
               </a>
               {/* <a href="#" className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-primary-foreground/20 transition-colors duration-300">

@@ -115,6 +115,10 @@ const Products = () => {
                 <Button 
                   variant="outline" 
                   className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+                  onClick={() => {
+                    const contactSection = document.getElementById('contact');
+                    contactSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                 >
                   Request Quote
                 </Button>

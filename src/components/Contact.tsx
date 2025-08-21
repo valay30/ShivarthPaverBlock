@@ -64,8 +64,8 @@ Please provide me with a detailed quote. Thank you!`;
     {
       icon: Mail,
       title: "Email Address",
-      details: "info@shivarth.com\nsales@shivarth.com\nsupport@shivarth.com",
-      link: "mailto:info@shivarth.com"
+      details: "shivarthenterprise@gmail.com",
+      link: "mailto:shivarthenterprise@gmail.com"
     },
     {
       icon: Clock,

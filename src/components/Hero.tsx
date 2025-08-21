@@ -81,14 +81,14 @@ const Hero = () => {
             {/* Floating Stats */}
             <div className="absolute -bottom-3 -left-3 sm:-bottom-4 sm:-left-4 lg:-bottom-6 lg:-left-6 bg-card p-3 sm:p-4 lg:p-6 rounded-lg shadow-elegant">
               <div className="text-center">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary">500+</div>
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary">100+</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Projects Completed</div>
               </div>
             </div>
             
             <div className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 lg:-top-6 lg:-right-6 bg-card p-3 sm:p-4 lg:p-6 rounded-lg shadow-elegant">
               <div className="text-center">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-accent">10+</div>
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-accent">1+</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Years Experience</div>
               </div>
             </div>
